@@ -3,7 +3,7 @@
 
 void write_header (ofstream& myfile){
     
-    myfile << "#Year\t" << "Doy\t" << "Cinput(gC/s)\t" << "Foliage(gC/m2)\t" << "Woody(gC/m2)\t" << "Met_litter(gC/m2)\t" << "Str_litter(gC/m2)\t" << "Fast_soil(gC/m2)\t" << "Slow_soil(gC/m2)\t" << "Pass_soil(gC/m2)\t" << "I(gC/m2/s)\t" << "Residence time(yr)\t" << "Capacity(gC/m2)\t" << "Potential(gC/m2)\t" << endl;
+    myfile << "#Year\t" << "Doy\t" << "Cinput(gC/s)\t" << "Foliage(gC/m2)\t" << "Woody(gC/m2)\t" << "Met_litter(gC/m2)\t" << "Str_litter(gC/m2)\t" << "Fast_soil(gC/m2)\t" << "Slow_soil(gC/m2)\t" << "Pass_soil(gC/m2)\t" << "Residence time(yr)\t" << "Capacity(gC/m2)\t" << "Potential(gC/m2)\t" << endl;
     
 }
 
