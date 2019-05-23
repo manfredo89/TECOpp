@@ -2,7 +2,7 @@ TECO++ is a C++ translation of the Fortran TECO model.
 
 To compile install the armadillo libraries and "make".
 
-The release version uses Intel C++ compilerr ipcp and MKL libraries.
+The release version uses Intel C++ compilerr icpc and MKL libraries.
 Edit the Makefile to use a different compiler / libraries.
 
 TECO++ is work in progress.
