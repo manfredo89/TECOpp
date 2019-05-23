@@ -29,8 +29,6 @@ private:
     
     inline bool is_endof_year() {return this->doy == 365;};
     
-    inline bool is_startof_year() {return this->doy == 1;}
-
 public:
 
     double dt = 86400.; /**< integration time */
@@ -63,6 +61,8 @@ public:
     
     inline bool printC() {return doy == 365;}
     inline bool diagnostic() {return thisYear % 1 == 0;}
+    
+    inline bool is_startof_year() {return this->doy == 1;}
     
     inline bool is_endof_forcing(){ return this->is_endof_year() && this->thisYear % this->nyr_forc == 0;}
 };

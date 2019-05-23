@@ -12,7 +12,6 @@ void write_c_state (ofstream& outfile, EcosystemCarbonStateType& my_state){
     outfile << Time.thisYear << "\t" << Time.doy << "\t" << my_state.cinput << "\t";
     for (const auto &e : my_state.Cpool_out) outfile << e / 365. << "\t";
     outfile << my_state.ResidenceT_out / 365 / sec_in_y << "\t" << my_state.CStorageCapacity_out / 365. << "\t" << my_state.CStoragePotential_out / 365.  << endl;
-    my_state.Cpool_out = vec(npools, fill::zeros);
 }
 
 void read_inputF (ifstream& infile) { }

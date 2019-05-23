@@ -33,6 +33,7 @@ void EcosystemCarbonStateType::init(){
 void EcosystemCarbonStateType::update_C_state(){
     
 #warning(cinput should be read from file)
+    if (Time.is_startof_year()) Cpool_out = vec(npools, fill::zeros);
     
     dC_dt = cinput * B + A * K * Cpool;
     Cpool += dC_dt * Time.dt;
@@ -70,11 +71,11 @@ void EcosystemCarbonStateType::matrixSpinUp(){
     BI += cinput * B;
         
     if (Time.is_endof_forcing()){
-        cout << Time.thisYear << endl;
         Cpool = -(AK / count).i() * (BI / count);
         
         AK = mat(npools, npools, fill::zeros);
         BI = vec(npools, fill::zeros);
+        count = 0;
     }
 }
 
