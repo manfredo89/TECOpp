@@ -50,9 +50,9 @@ void EcosystemCarbonStateType::diagnostic(){
 
     mat AK_inv = (A * K).i();
     
-    ResidenceT = AK_inv * B;
-    CStorageCapacity = ResidenceT * cinput;
-    CStoragePotential = AK_inv * dC_dt;
+    ResidenceT = -AK_inv * B;
+    CStorageCapacity = -ResidenceT * cinput;
+    CStoragePotential = -AK_inv * dC_dt;
 
     ResidenceT_out += sum(ResidenceT);
     CStorageCapacity_out += sum(CStorageCapacity);
