@@ -9,6 +9,7 @@ TECO++ is work in progress.
 The input is currently embedded in the code.
 
 To generate Doxy documentation install Doxygen and graphviz and "doxy teco_config".
+Then open Doc/html/index.html
 
 Feel free to fork the repo and commit new changes, I'll be happy to merge.
 
