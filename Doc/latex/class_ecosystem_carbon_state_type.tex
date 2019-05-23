@@ -1,0 +1,131 @@
+\hypertarget{class_ecosystem_carbon_state_type}{}\section{Ecosystem\+Carbon\+State\+Type Class Reference}
+\label{class_ecosystem_carbon_state_type}\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+
+
+This is the main class of the T\+E\+CO model. It holds all physical variables and methods.  
+
+
+
+
+{\ttfamily \#include $<$Ecosystem\+Carbon\+State\+Type.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ecosystem_carbon_state_type_a88c8eda06ce5e4bd306220280718939a}{Ecosystem\+Carbon\+State\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_ecosystem_carbon_state_type_af8446f966b95c51b061ac5199bd8bc26}{init}} ()
+\item 
+void \mbox{\hyperlink{class_ecosystem_carbon_state_type_a59643b09c425cf91f8c0098d1ab491d5}{update\+\_\+\+C\+\_\+state}} ()
+\item 
+void \mbox{\hyperlink{class_ecosystem_carbon_state_type_af3682294ea4888ea45404b675e184bd0}{diagnostic}} ()
+\item 
+void \mbox{\hyperlink{class_ecosystem_carbon_state_type_a9ea22da7d71c04e00dff17a4f225855a}{matrix\+Spin\+Up}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vec \mbox{\hyperlink{class_ecosystem_carbon_state_type_a4afa44d236701692fd58577a38e5fee0}{Cpool}}
+\item 
+vec \mbox{\hyperlink{class_ecosystem_carbon_state_type_a1638e17e4bfc9d670ac0bd6b17296978}{Cpool\+\_\+out}}
+\item 
+double \mbox{\hyperlink{class_ecosystem_carbon_state_type_aa98b5ed995c5f549c37d4131487d5707}{Residence\+T\+\_\+out}} = 0.
+\item 
+double \mbox{\hyperlink{class_ecosystem_carbon_state_type_a83eba36ac24e57454c571f632b25c22c}{C\+Storage\+Capacity\+\_\+out}} = 0.
+\item 
+double \mbox{\hyperlink{class_ecosystem_carbon_state_type_a124871db6c94642d98997a081d99370b}{C\+Storage\+Potential\+\_\+out}} = 0.
+\item 
+double \mbox{\hyperlink{class_ecosystem_carbon_state_type_ad0ba193f2679d48489a8199c555c7598}{cinput}} = 2.\+245\+E-\/5
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the main class of the T\+E\+CO model. It holds all physical variables and methods. 
+
+\begin{DoxyDate}{Date}
+Created on\+: 21/may/2019 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Manfredo di Porcia 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ecosystem_carbon_state_type_a88c8eda06ce5e4bd306220280718939a}\label{class_ecosystem_carbon_state_type_a88c8eda06ce5e4bd306220280718939a}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{Ecosystem\+Carbon\+State\+Type()}{EcosystemCarbonStateType()}}
+{\footnotesize\ttfamily Ecosystem\+Carbon\+State\+Type\+::\+Ecosystem\+Carbon\+State\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ecosystem_carbon_state_type_af3682294ea4888ea45404b675e184bd0}\label{class_ecosystem_carbon_state_type_af3682294ea4888ea45404b675e184bd0}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!diagnostic@{diagnostic}}
+\index{diagnostic@{diagnostic}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{diagnostic()}{diagnostic()}}
+{\footnotesize\ttfamily void Ecosystem\+Carbon\+State\+Type\+::diagnostic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Diagnostic \mbox{\Hypertarget{class_ecosystem_carbon_state_type_af8446f966b95c51b061ac5199bd8bc26}\label{class_ecosystem_carbon_state_type_af8446f966b95c51b061ac5199bd8bc26}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!init@{init}}
+\index{init@{init}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Ecosystem\+Carbon\+State\+Type\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize carbon state pools and matrices \mbox{\Hypertarget{class_ecosystem_carbon_state_type_a9ea22da7d71c04e00dff17a4f225855a}\label{class_ecosystem_carbon_state_type_a9ea22da7d71c04e00dff17a4f225855a}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!matrix\+Spin\+Up@{matrix\+Spin\+Up}}
+\index{matrix\+Spin\+Up@{matrix\+Spin\+Up}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{matrix\+Spin\+Up()}{matrixSpinUp()}}
+{\footnotesize\ttfamily void Ecosystem\+Carbon\+State\+Type\+::matrix\+Spin\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Semi-\/analytical spinup (?) \mbox{\Hypertarget{class_ecosystem_carbon_state_type_a59643b09c425cf91f8c0098d1ab491d5}\label{class_ecosystem_carbon_state_type_a59643b09c425cf91f8c0098d1ab491d5}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!update\+\_\+\+C\+\_\+state@{update\+\_\+\+C\+\_\+state}}
+\index{update\+\_\+\+C\+\_\+state@{update\+\_\+\+C\+\_\+state}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{update\+\_\+\+C\+\_\+state()}{update\_C\_state()}}
+{\footnotesize\ttfamily void Ecosystem\+Carbon\+State\+Type\+::update\+\_\+\+C\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Main T\+E\+CO step to update carbon pools 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ecosystem_carbon_state_type_ad0ba193f2679d48489a8199c555c7598}\label{class_ecosystem_carbon_state_type_ad0ba193f2679d48489a8199c555c7598}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!cinput@{cinput}}
+\index{cinput@{cinput}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{cinput}{cinput}}
+{\footnotesize\ttfamily double Ecosystem\+Carbon\+State\+Type\+::cinput = 2.\+245\+E-\/5}
+
+Carbon input \mbox{\Hypertarget{class_ecosystem_carbon_state_type_a4afa44d236701692fd58577a38e5fee0}\label{class_ecosystem_carbon_state_type_a4afa44d236701692fd58577a38e5fee0}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!Cpool@{Cpool}}
+\index{Cpool@{Cpool}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{Cpool}{Cpool}}
+{\footnotesize\ttfamily vec Ecosystem\+Carbon\+State\+Type\+::\+Cpool}
+
+Carbon pool \mbox{\Hypertarget{class_ecosystem_carbon_state_type_a1638e17e4bfc9d670ac0bd6b17296978}\label{class_ecosystem_carbon_state_type_a1638e17e4bfc9d670ac0bd6b17296978}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!Cpool\+\_\+out@{Cpool\+\_\+out}}
+\index{Cpool\+\_\+out@{Cpool\+\_\+out}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{Cpool\+\_\+out}{Cpool\_out}}
+{\footnotesize\ttfamily vec Ecosystem\+Carbon\+State\+Type\+::\+Cpool\+\_\+out}
+
+Carbon pool for output \mbox{\Hypertarget{class_ecosystem_carbon_state_type_a83eba36ac24e57454c571f632b25c22c}\label{class_ecosystem_carbon_state_type_a83eba36ac24e57454c571f632b25c22c}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!C\+Storage\+Capacity\+\_\+out@{C\+Storage\+Capacity\+\_\+out}}
+\index{C\+Storage\+Capacity\+\_\+out@{C\+Storage\+Capacity\+\_\+out}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{C\+Storage\+Capacity\+\_\+out}{CStorageCapacity\_out}}
+{\footnotesize\ttfamily double Ecosystem\+Carbon\+State\+Type\+::\+C\+Storage\+Capacity\+\_\+out = 0.}
+
+Carbon storage capacity for output \mbox{\Hypertarget{class_ecosystem_carbon_state_type_a124871db6c94642d98997a081d99370b}\label{class_ecosystem_carbon_state_type_a124871db6c94642d98997a081d99370b}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!C\+Storage\+Potential\+\_\+out@{C\+Storage\+Potential\+\_\+out}}
+\index{C\+Storage\+Potential\+\_\+out@{C\+Storage\+Potential\+\_\+out}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{C\+Storage\+Potential\+\_\+out}{CStoragePotential\_out}}
+{\footnotesize\ttfamily double Ecosystem\+Carbon\+State\+Type\+::\+C\+Storage\+Potential\+\_\+out = 0.}
+
+Carbon storage potential for output \mbox{\Hypertarget{class_ecosystem_carbon_state_type_aa98b5ed995c5f549c37d4131487d5707}\label{class_ecosystem_carbon_state_type_aa98b5ed995c5f549c37d4131487d5707}} 
+\index{Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}!Residence\+T\+\_\+out@{Residence\+T\+\_\+out}}
+\index{Residence\+T\+\_\+out@{Residence\+T\+\_\+out}!Ecosystem\+Carbon\+State\+Type@{Ecosystem\+Carbon\+State\+Type}}
+\subsubsection{\texorpdfstring{Residence\+T\+\_\+out}{ResidenceT\_out}}
+{\footnotesize\ttfamily double Ecosystem\+Carbon\+State\+Type\+::\+Residence\+T\+\_\+out = 0.}
+
+Carbon residence time for output 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_ecosystem_carbon_state_type_8hpp}{Ecosystem\+Carbon\+State\+Type.\+hpp}}\item 
+src/\mbox{\hyperlink{_ecosystem_carbon_state_type_8cpp}{Ecosystem\+Carbon\+State\+Type.\+cpp}}\end{DoxyCompactItemize}

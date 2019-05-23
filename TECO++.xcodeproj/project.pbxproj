@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		139CBAFD228B6FC9004944CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139CBAFC228B6FC9004944CC /* main.cpp */; };
+		139CBB05228B6FF3004944CC /* SimulationTimeType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139CBB03228B6FF3004944CC /* SimulationTimeType.cpp */; };
+		139CBB0B228B8718004944CC /* EcosystemCarbonStateType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139CBB09228B8718004944CC /* EcosystemCarbonStateType.cpp */; };
+		139CBB11228CA375004944CC /* teco_io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139CBB0F228CA375004944CC /* teco_io.cpp */; };
+		139CBB14228CCE61004944CC /* libarmadillo.9.30.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 139CBB13228CCE61004944CC /* libarmadillo.9.30.2.dylib */; };
+		139CBB2E2294BAE0004944CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139CBAFC228B6FC9004944CC /* main.cpp */; };
+		139CBB2F2294BAE0004944CC /* EcosystemCarbonStateType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139CBB09228B8718004944CC /* EcosystemCarbonStateType.cpp */; };
+		139CBB302294BAE0004944CC /* teco_io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139CBB0F228CA375004944CC /* teco_io.cpp */; };
+		139CBB312294BAE0004944CC /* SimulationTimeType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139CBB03228B6FF3004944CC /* SimulationTimeType.cpp */; };
+		139CBB332294BAE0004944CC /* libarmadillo.9.30.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 139CBB13228CCE61004944CC /* libarmadillo.9.30.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		139CBAF7228B6FC9004944CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		139CBB342294BAE0004944CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		139CBAF9228B6FC9004944CC /* TECO++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TECO++"; sourceTree = BUILT_PRODUCTS_DIR; };
+		139CBAFC228B6FC9004944CC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		139CBB03228B6FF3004944CC /* SimulationTimeType.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationTimeType.cpp; sourceTree = "<group>"; };
+		139CBB04228B6FF3004944CC /* SimulationTimeType.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SimulationTimeType.hpp; sourceTree = "<group>"; };
+		139CBB09228B8718004944CC /* EcosystemCarbonStateType.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EcosystemCarbonStateType.cpp; sourceTree = "<group>"; };
+		139CBB0A228B8718004944CC /* EcosystemCarbonStateType.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EcosystemCarbonStateType.hpp; sourceTree = "<group>"; };
+		139CBB0F228CA375004944CC /* teco_io.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = teco_io.cpp; sourceTree = "<group>"; };
+		139CBB10228CA375004944CC /* teco_io.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = teco_io.hpp; sourceTree = "<group>"; };
+		139CBB13228CCE61004944CC /* libarmadillo.9.30.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libarmadillo.9.30.2.dylib; path = ../../../../../../opt/local/lib/libarmadillo.9.30.2.dylib; sourceTree = "<group>"; };
+		139CBB382294BAE0004944CC /* TECO++(intel) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TECO++(intel)"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		139CBAF6228B6FC9004944CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139CBB14228CCE61004944CC /* libarmadillo.9.30.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		139CBB322294BAE0004944CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139CBB332294BAE0004944CC /* libarmadillo.9.30.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		139CBAF0228B6FC9004944CC = {
+			isa = PBXGroup;
+			children = (
+				139CBAFB228B6FC9004944CC /* src */,
+				139CBAFA228B6FC9004944CC /* Products */,
+				139CBB12228CCE61004944CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		139CBAFA228B6FC9004944CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139CBAF9228B6FC9004944CC /* TECO++ */,
+				139CBB382294BAE0004944CC /* TECO++(intel) */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		139CBAFB228B6FC9004944CC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				139CBAFC228B6FC9004944CC /* main.cpp */,
+				139CBB03228B6FF3004944CC /* SimulationTimeType.cpp */,
+				139CBB04228B6FF3004944CC /* SimulationTimeType.hpp */,
+				139CBB0F228CA375004944CC /* teco_io.cpp */,
+				139CBB10228CA375004944CC /* teco_io.hpp */,
+				139CBB09228B8718004944CC /* EcosystemCarbonStateType.cpp */,
+				139CBB0A228B8718004944CC /* EcosystemCarbonStateType.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		139CBB12228CCE61004944CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				139CBB13228CCE61004944CC /* libarmadillo.9.30.2.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		139CBAF8228B6FC9004944CC /* TECO++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 139CBB00228B6FC9004944CC /* Build configuration list for PBXNativeTarget "TECO++" */;
+			buildPhases = (
+				139CBAF5228B6FC9004944CC /* Sources */,
+				139CBAF6228B6FC9004944CC /* Frameworks */,
+				139CBAF7228B6FC9004944CC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TECO++";
+			productName = "TECO++";
+			productReference = 139CBAF9228B6FC9004944CC /* TECO++ */;
+			productType = "com.apple.product-type.tool";
+		};
+		139CBB2C2294BAE0004944CC /* TECO++(intel) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 139CBB352294BAE0004944CC /* Build configuration list for PBXNativeTarget "TECO++(intel)" */;
+			buildPhases = (
+				139CBB2D2294BAE0004944CC /* Sources */,
+				139CBB322294BAE0004944CC /* Frameworks */,
+				139CBB342294BAE0004944CC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TECO++(intel)";
+			productName = "TECO++";
+			productReference = 139CBB382294BAE0004944CC /* TECO++(intel) */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		139CBAF1228B6FC9004944CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Manfredo di Porcia";
+				TargetAttributes = {
+					139CBAF8228B6FC9004944CC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 139CBAF4228B6FC9004944CC /* Build configuration list for PBXProject "TECO++" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 139CBAF0228B6FC9004944CC;
+			productRefGroup = 139CBAFA228B6FC9004944CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				139CBAF8228B6FC9004944CC /* TECO++ */,
+				139CBB2C2294BAE0004944CC /* TECO++(intel) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		139CBAF5228B6FC9004944CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139CBAFD228B6FC9004944CC /* main.cpp in Sources */,
+				139CBB0B228B8718004944CC /* EcosystemCarbonStateType.cpp in Sources */,
+				139CBB11228CA375004944CC /* teco_io.cpp in Sources */,
+				139CBB05228B6FF3004944CC /* SimulationTimeType.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		139CBB2D2294BAE0004944CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139CBB2E2294BAE0004944CC /* main.cpp in Sources */,
+				139CBB2F2294BAE0004944CC /* EcosystemCarbonStateType.cpp in Sources */,
+				139CBB302294BAE0004944CC /* teco_io.cpp in Sources */,
+				139CBB312294BAE0004944CC /* SimulationTimeType.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		139CBAFE228B6FC9004944CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = /opt/local/include;
+			};
+			name = Debug;
+		};
+		139CBAFF228B6FC9004944CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = /opt/local/include;
+			};
+			name = Release;
+		};
+		139CBB01228B6FC9004944CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		139CBB02228B6FC9004944CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		139CBB362294BAE0004944CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_VERSION = com.intel.compilers.icc.latest;
+				ICC_MKL = nonthreaded;
+				ICC_OPTLEVEL = speedHLO;
+				ICC_OPT_IPO_FOR_SINGLE_FILE_COMPILATION = YES;
+				ICC_OPT_REQUIRE_INTEL_ARCH = HOST;
+				ICC_USE_OPTIMIZED_HEADERS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		139CBB372294BAE0004944CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_VERSION = com.intel.compilers.icc.latest;
+				ICC_MKL = nonthreaded;
+				ICC_OPTLEVEL = speedHLO;
+				ICC_OPT_IPO_FOR_SINGLE_FILE_COMPILATION = YES;
+				ICC_OPT_REQUIRE_INTEL_ARCH = HOST;
+				ICC_USE_OPTIMIZED_HEADERS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		139CBAF4228B6FC9004944CC /* Build configuration list for PBXProject "TECO++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				139CBAFE228B6FC9004944CC /* Debug */,
+				139CBAFF228B6FC9004944CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		139CBB00228B6FC9004944CC /* Build configuration list for PBXNativeTarget "TECO++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				139CBB01228B6FC9004944CC /* Debug */,
+				139CBB02228B6FC9004944CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		139CBB352294BAE0004944CC /* Build configuration list for PBXNativeTarget "TECO++(intel)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				139CBB362294BAE0004944CC /* Debug */,
+				139CBB372294BAE0004944CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 139CBAF1228B6FC9004944CC /* Project object */;
+}
