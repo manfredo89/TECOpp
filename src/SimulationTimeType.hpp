@@ -27,6 +27,7 @@ private:
     chrono::system_clock::time_point start_time; /**< Main loop start time */
     chrono::system_clock::time_point end_time; /**< Main loop end time */
     
+    /** Is it the end of the year */
     inline bool is_endof_year() {return this->doy == 365;};
     
 public:
@@ -59,11 +60,16 @@ public:
      */
     void init(int startyr, int endyr, int nyr_forc);
     
+    /** Is it time to print Carbon output */
     inline bool printC() {return doy == 365;}
-    inline bool diagnostic() {return thisYear % 1 == 0;}
     
+    /** Is it time to rrun diagnostic */
+    inline bool diagnostic() {return thisYear % 1 == 0;}
+
+    /** Is it start of the year */
     inline bool is_startof_year() {return this->doy == 1;}
     
+    /** Is it the end of the external forcing */
     inline bool is_endof_forcing(){ return this->is_endof_year() && this->thisYear % this->nyr_forc == 0;}
 };
 

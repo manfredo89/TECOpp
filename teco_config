@@ -9,3 +9,4 @@ HAVE_DOT               = YES
 GENERATE_LATEX         = YES
 LATEX_OUTPUT           = latex
 USE_MATHJAX            = YES
+SOURCE_BROWSER         = YES
