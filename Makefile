@@ -29,7 +29,7 @@ build:
 debug: CXXFLAGS += -g -Wall
 debug: all
 
-release: CXX = icpc #comment this line to use g++
+release: CXX = icpc#comment this line to use g++
 release: CXXFLAGS += -fast
 release: INCLUDE += -I/opt/intel/mkl/include
 release: LDFLAGS += -L/opt/intel/mkl/lib -Wl,-rpath,/opt/intel/mkl/lib -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -ldl
