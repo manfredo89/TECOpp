@@ -18,7 +18,10 @@ Please cite original reference when using this algorithm. ~\newline
 ~\newline
  To compile link with Armadillo libraries (\href{http://arma.sourceforge.net/}{\tt http\+://arma.\+sourceforge.\+net/}) ~\newline
 ~\newline
- Test run for 10000 years with different compilers\+: ~\newline
+ Test run for 10000 years with different compilers for the same code\+: ~\newline
 T\+E\+C\+O++ (icpc -\/fast) -\/$>$ 9.\+112 s ~\newline
 T\+E\+C\+O++ (clang++ -\/\+Ofast) -\/$>$ 8.\+689 s ~\newline
 T\+E\+CO (ifort -\/fast) -\/$>$ 6.\+107 s ~\newline
+~\newline
+ By optimizing code (avoid repeated computation of A\+K\+\_\+inv which is constant)\+:~\newline
+ T\+E\+C\+O++ (clang++ -\/\+Ofast) -\/$>$ 2.\+33873 s ~\newline

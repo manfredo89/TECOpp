@@ -70,7 +70,7 @@ public:
     inline bool is_startof_year() {return this->doy == 1;}
     
     /** Is it the end of the external forcing */
-    inline bool is_endof_forcing(){ return this->is_endof_year() && this->thisYear % this->nyr_forc == 0;}
+    inline bool is_endof_forcing() {return this->is_endof_year() && this->thisYear % this->nyr_forc == 0;}
 };
 
 extern SimulationTimeType Time;

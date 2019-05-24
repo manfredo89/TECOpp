@@ -86,10 +86,13 @@ Please cite original reference when using this algorithm. <br />
 <p><br />
  To compile link with Armadillo libraries (<a href="http://arma.sourceforge.net/">http://arma.sourceforge.net/</a>) <br />
 <br />
- Test run for 10000 years with different compilers: <br />
+ Test run for 10000 years with different compilers for the same code: <br />
 TECO++ (icpc -fast) -&gt; 9.112 s <br />
 TECO++ (clang++ -Ofast) -&gt; 8.689 s <br />
 TECO (ifort -fast) -&gt; 6.107 s <br />
+<br />
+ By optimizing code (avoid repeated computation of AK_inv which is constant):<br />
+ TECO++ (clang++ -Ofast) -&gt; 2.33873 s <br />
 </p>
 </div></div><!-- contents -->
 <!-- start footer part -->

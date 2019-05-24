@@ -28,6 +28,8 @@ void EcosystemCarbonStateType::init(){
     A(islowsoil, istrlit  ) = 0.275;
     A(ipasssoil, imicsoil ) = 0.004;
     A(ipasssoil, islowsoil) = 0.03;
+    
+    AK_inv = (A*K).i();
 }
 
 void EcosystemCarbonStateType::update_C_state(){
@@ -47,8 +49,6 @@ void EcosystemCarbonStateType::diagnostic(){
     CStorageCapacity_out = 0.;
     CStoragePotential_out = 0.;
     }
-
-    mat AK_inv = (A * K).i();
     
     ResidenceT = -AK_inv * B;
     CStorageCapacity = -ResidenceT * cinput;

@@ -21,10 +21,14 @@
  *
  * To compile link with Armadillo libraries (http://arma.sourceforge.net/) \n\n
  *
- * Test run for 10000 years with different compilers: \n
+ * Test run for 10000 years with different compilers for the same code: \n
  * TECO++ (icpc -fast)     -> 9.112 s \n
  * TECO++ (clang++ -Ofast) -> 8.689 s \n
- * TECO   (ifort -fast)    -> 6.107 s \n
+ * TECO   (ifort -fast)    -> 6.107 s \n\n
+ *
+ * By optimizing code (avoid repeated computation of AK_inv which is constant):\n
+ *
+ * TECO++ (clang++ -Ofast) -> 2.33873 s \n
  *
  */
 
@@ -38,6 +42,8 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     
     try {
+        /* This was meant to read tthe input file. For now input is embedded.
+         If a new function to read input from file is added the condition should become if(argc != 2)*/
         if(argc != 1) throw (string("Usage is ") + argv[0] + string(" input file"));
                 
         /* Open output file */
@@ -51,7 +57,7 @@ int main(int argc, const char * argv[]) {
         
         /* Time variables */
         int startyr = 1;
-        int endyr = 1000;
+        int endyr = 10000;
         int nyr_forc = 10;
         bool is_SASU_spinup = true;
         bool is_diagnostic = true;
@@ -62,6 +68,7 @@ int main(int argc, const char * argv[]) {
         /* Initialize carbon state */
         cs_ecosys.init();
                 
+        /* Main loop */
         for (Time.start(); !Time.is_end(); Time.tick_time()){
             
             /* Update carbon */

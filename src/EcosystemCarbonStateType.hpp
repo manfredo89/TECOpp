@@ -39,6 +39,7 @@ private:
     vec B; /**< Allocation vector */
     mat K; /**< Turnover matrix */
     mat A; /**< Transfer matrix */
+    mat AK_inv; /**< Inverse of AK */
     
     vec ResidenceT; /**< Carbon residence time */
     vec CStorageCapacity; /**< Carbon storage capacity */
@@ -66,6 +67,7 @@ public:
         Cpool_out = vec(npools, fill::zeros);
         A = mat(npools,npools,fill::eye) * -1;
         K = mat(npools,npools,fill::zeros);
+        AK_inv = mat(npools,npools,fill::zeros);
         ResidenceT = vec(npools,fill::zeros);
         CStorageCapacity = vec(npools,fill::zeros);
         CStoragePotential = vec(npools,fill::zeros);
