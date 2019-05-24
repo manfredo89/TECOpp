@@ -29,7 +29,7 @@ void EcosystemCarbonStateType::init(){
     A(ipasssoil, imicsoil ) = 0.004;
     A(ipasssoil, islowsoil) = 0.03;
     
-    AK_inv = (A*K).i();
+    AK_inv = (A * K).i();
 }
 
 void EcosystemCarbonStateType::update_C_state(){

@@ -94,7 +94,8 @@ Definition at line 5 of file Ecosystem\+Carbon\+State\+Type.\+cpp.
 \subsubsection{\texorpdfstring{matrix\+Spin\+Up()}{matrixSpinUp()}}
 {\footnotesize\ttfamily void Ecosystem\+Carbon\+State\+Type\+::matrix\+Spin\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Semi-\/analytical spinup (?) 
+Semi-\/analytical spinup (?)~\newline
+This function looks pretty dumb to me. AK is constant so to build a variable at each time step by summing AK and then taking the mean is pointless. Plenty of room for optimization. 
 
 Definition at line 62 of file Ecosystem\+Carbon\+State\+Type.\+cpp.
 

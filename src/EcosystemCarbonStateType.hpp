@@ -79,7 +79,11 @@ public:
     void update_C_state();
     /** Diagnostic */
     void diagnostic();
-    /** Semi-analytical spinup (?) */
+    /** Semi-analytical spinup (?)\n
+     * This function looks pretty dumb to me.
+     * AK is constant so to build a variable at each time step by summing AK and then
+     * taking the mean is pointless. Plenty of room for optimization.
+     */
     void matrixSpinUp();
     
 };
